@@ -32,6 +32,10 @@ Following Code take from
 https://www.geeksforgeeks.org/how-to-float-three-div-side-by-side-using-css/#:~:text=Three%20or%20more%20different%20div,will%20float%20on%20left%20side.
 */
 
+.Activities{
+    
+}
+
 #Left{
     border: solid 1px black;
     text-align: center;
@@ -51,8 +55,11 @@ https://www.geeksforgeeks.org/how-to-float-three-div-side-by-side-using-css/#:~:
 #Right{
     border: solid 1px black;
     text-align: center;
-    float: right;
+    float: left;
     width: 30%;
     height: 500px;
 }
 
+#Resources{
+    float: left;
+}
