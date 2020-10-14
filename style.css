@@ -25,6 +25,7 @@ li {
 
 #Introduction{
     text-align: center;
+    padding: 20px;
 }
 
 /*
@@ -32,8 +33,8 @@ Following Code take from
 https://www.geeksforgeeks.org/how-to-float-three-div-side-by-side-using-css/#:~:text=Three%20or%20more%20different%20div,will%20float%20on%20left%20side.
 */
 
-.Activities{
-    
+main{
+    display: table;
 }
 
 #Left{
@@ -61,5 +62,5 @@ https://www.geeksforgeeks.org/how-to-float-three-div-side-by-side-using-css/#:~:
 }
 
 #Resources{
-    float: left;
+    padding: 20px;
 }
