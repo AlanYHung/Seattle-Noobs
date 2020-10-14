@@ -1,0 +1,58 @@
+Body{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/e/eb/Mount_Rainier_from_west.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+    border: solid black 1px;
+}
+
+ul {
+    text-align: center;
+}
+
+li {
+    border: solid 1px black;
+    display: inline-block;
+    padding: 5px;
+    margin: 0px 5px 0px 5px;
+    background-color: forestgreen;
+    font: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#Introduction{
+    text-align: center;
+}
+
+/*
+Following Code take from
+https://www.geeksforgeeks.org/how-to-float-three-div-side-by-side-using-css/#:~:text=Three%20or%20more%20different%20div,will%20float%20on%20left%20side.
+*/
+
+#Left{
+    border: solid 1px black;
+    text-align: center;
+    float: left;
+    width: 30%;
+    height: 500px;
+}
+
+#Middle{
+    border: solid 1px black;
+    text-align: center;
+    float: left;
+    width: 30%;
+    height: 500px;
+}
+
+#Right{
+    border: solid 1px black;
+    text-align: center;
+    float: right;
+    width: 30%;
+    height: 500px;
+}
+
