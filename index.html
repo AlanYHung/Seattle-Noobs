@@ -3,12 +3,15 @@
     <head>
         <title>Seattle Noobs!</title>
         <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="greeting.js"></script>
     </head>
-    <body onbeforeunload="return farewell.js">
+    <body>
         <header>
             <h1>Seattle Noobs</h1>
             <h2>
-                <Script src="greeting.js"></Script>
+                <script>
+                    document.write(greeting(getUserName(),timeofday()));
+                </script>
             </h2>
             <nav>
                 <ul>
