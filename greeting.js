@@ -52,7 +52,7 @@ function introImages(){
     } 
 
     for (i=1; i<=numOfImages; i++){
-        imgSrc = 'src = "images/Seattle/' + i + '.jpg"';
+        imgSrc = 'src = "images/seattlepics/' + i + '.jpg"';
         javaImg = javaImg + '<img ' + imgSrc + ' width="' + picWidth + '" height="' + picHeight + '" />'
     }
     console.log (javaImg);
