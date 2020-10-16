@@ -1,10 +1,17 @@
 Body{
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/e/eb/Mount_Rainier_from_west.jpg);
+    background-image: url(images/Forest.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 h1{
+    background-color: grey;
+    text-align: center;
+    border: solid black 1px;
+}
+
+h2{
+    background-color: grey;
     text-align: center;
     border: solid black 1px;
 }
@@ -38,6 +45,7 @@ main{
 }
 
 #Left{
+    background-color: grey;
     border: solid 1px black;
     text-align: center;
     float: left;
@@ -46,6 +54,7 @@ main{
 }
 
 #Middle{
+    background-color: grey;
     border: solid 1px black;
     text-align: center;
     float: left;
@@ -54,6 +63,7 @@ main{
 }
 
 #Right{
+    background-color: grey;
     border: solid 1px black;
     text-align: center;
     float: left;
@@ -62,5 +72,6 @@ main{
 }
 
 #Resources{
+    background-color: black;
     padding: 20px;
 }

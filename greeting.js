@@ -26,9 +26,104 @@ function timeofday(){
 function getUserName(){
     var UserName = prompt("Please enter your name.")
 
+    while (UserName==null || UserName==undefined)
+    {
+        UserName = prompt("Invalid Response.  Please enter your name.")
+    }
+
     return UserName;
 }
 
 function greeting(Who, When){
     return (When + Who + "!")
+}
+
+function food(){
+    var userFood = prompt("What is food would you like to explore? Please Choose from Pizza, Noodles, Sushi, & Steak.").toLowerCase();
+    var javaImg = "";
+    var imageElement = document.getElementById('ImageFood');
+    var picWidth = 400;
+    var picHeight = 200;
+    var imgSrc = 'src ="https://via.placeholder.com/400x100"';
+
+    while ((userFood != "pizza") && (userFood != "sushi") && (userFood != "noodles") && (userFood != "steak"))
+    {
+        userFood = prompt("You can only choose from Pizza, Steak, Sushi, & Noodles.  Please choose one.")
+    } 
+
+    if (userFood == "pizza")
+    {
+        imgSrc = 'src ="images/Pizza.jpg"';
+    }
+    else if (userFood == "steak")
+    {
+        imgSrc = 'src ="images/Steak.jpg"';
+    }
+    else if (userFood == "noodles")
+    {
+        imgSrc = 'src ="images/Noodles.jpg"';
+    }
+    else if (userFood == "sushi")
+    {
+        imgSrc = 'src ="images/Sushi Platter.jpg"';
+    }
+
+    javaImg = '<img ' + imgSrc + ' width="' + picWidth + '" height="' + picHeight + '" />';
+    imageElement.innerHTML = javaImg;
+}
+
+function company(){
+    var userCompany = prompt("What company would you like to explore? Please Choose from Microsoft, Amazon, & Boeing.").toLowerCase();
+    var javaImg = "";
+    var imageElement = document.getElementById('ImageCompany');
+    var picWidth = 400;
+    var picHeight = 200;
+    var imgSrc = 'src ="https://via.placeholder.com/400x100"';
+
+    while ((userCompany != "microsoft") && (userCompany != "amazon") && (userCompany != "boeing"))
+    {
+        userCompany = prompt("You can only choose from Microsoft, Amazon, & Boeing.  Please choose one.")
+    } 
+
+    if (userCompany == "microsoft")
+    {
+        imgSrc = 'src ="images/Microsoft.jpg"';
+    }
+    else if (userCompany == "amazon")
+    {
+        imgSrc = 'src ="images/Amazon.jpg"';
+    }
+    else if (userCompany == "boeing")
+    {
+        imgSrc = 'src ="images/Boeing.jpg"';
+    }
+
+    javaImg = '<img ' + imgSrc + ' width="' + picWidth + '" height="' + picHeight + '" />';
+    imageElement.innerHTML = javaImg;
+}
+
+function hikes(){
+    var userHikes = prompt("What company would you like to explore? Please Choose from Rainier or Helens.").toLowerCase();
+    var javaImg = "";
+    var imageElement = document.getElementById('ImageHikes');
+    var picWidth = 400;
+    var picHeight = 200;
+    var imgSrc = 'src ="https://via.placeholder.com/400x100"';
+
+    while ((userHikes != "rainier") && (userHikes != "helens"))
+    {
+        userHikes = prompt("You can only choose from Rainier or Helens.  Please choose one.")
+    } 
+
+    if (userHikes == "rainier")
+    {
+        imgSrc = 'src ="https://upload.wikimedia.org/wikipedia/commons/e/eb/Mount_Rainier_from_west.jpg"';
+    }
+    else if (userHikes == "helens")
+    {
+        imgSrc = 'src ="images/Mt St Helens.jpg"';
+    }
+
+    javaImg = '<img ' + imgSrc + ' width="' + picWidth + '" height="' + picHeight + '" />';
+    imageElement.innerHTML = javaImg;
 }
