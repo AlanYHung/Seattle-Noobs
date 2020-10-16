@@ -38,13 +38,34 @@ function greeting(Who, When){
     return (When + Who + "!")
 }
 
+function introImages(){
+    var numOfImages = prompt("How many different images of seattle do you want to see? (Max 8)");
+    var javaImg = "";
+    var imageElement = document.getElementById('Introduction');
+    var picWidth = 200;
+    var picHeight = 200;
+    var imgSrc = 'src ="https://via.placeholder.com/1500x200"';
+
+    while (!(numOfImages > 0 && numOfImages < 9))
+    {
+        numOfImages = prompt("You can only choose from 1-8.  Please try again.")
+    } 
+
+    for (i=1; i<=numOfImages; i++){
+        imgSrc = 'src = "images/seattle/' + i + '.jpg"';
+        javaImg = javaImg + '<img ' + imgSrc + ' width="' + picWidth + '" height="' + picHeight + '" />'
+    }
+    
+    imageElement.innerHTML = javaImg;
+}
+
 function food(){
     var userFood = prompt("What is food would you like to explore? Please Choose from Pizza, Noodles, Sushi, & Steak.").toLowerCase();
     var javaImg = "";
     var imageElement = document.getElementById('ImageFood');
     var picWidth = 400;
     var picHeight = 200;
-    var imgSrc = 'src ="https://via.placeholder.com/400x100"';
+    var imgSrc = 'src ="https://via.placeholder.com/400x200"';
 
     while ((userFood != "pizza") && (userFood != "sushi") && (userFood != "noodles") && (userFood != "steak"))
     {
@@ -78,7 +99,7 @@ function company(){
     var imageElement = document.getElementById('ImageCompany');
     var picWidth = 400;
     var picHeight = 200;
-    var imgSrc = 'src ="https://via.placeholder.com/400x100"';
+    var imgSrc = 'src ="https://via.placeholder.com/400x200"';
 
     while ((userCompany != "microsoft") && (userCompany != "amazon") && (userCompany != "boeing"))
     {
@@ -108,7 +129,7 @@ function hikes(){
     var imageElement = document.getElementById('ImageHikes');
     var picWidth = 400;
     var picHeight = 200;
-    var imgSrc = 'src ="https://via.placeholder.com/400x100"';
+    var imgSrc = 'src ="https://via.placeholder.com/400x200"';
 
     while ((userHikes != "rainier") && (userHikes != "helens"))
     {
