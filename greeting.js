@@ -52,10 +52,10 @@ function introImages(){
     } 
 
     for (i=1; i<=numOfImages; i++){
-        imgSrc = 'src = "images/seattle/' + i + '.jpg"';
+        imgSrc = 'src = "/images/seattle/' + i + '.jpg"';
         javaImg = javaImg + '<img ' + imgSrc + ' width="' + picWidth + '" height="' + picHeight + '" />'
     }
-    
+    console.log (javaImg);
     imageElement.innerHTML = javaImg;
 }
 
