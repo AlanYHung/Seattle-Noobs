@@ -51,6 +51,7 @@ main{
     float: left;
     width: 30%;
     height: 500px;
+    margin: 10px;
 }
 
 #Middle{
@@ -60,6 +61,7 @@ main{
     float: left;
     width: 30%;
     height: 500px;
+    margin: 10px;
 }
 
 #Right{
@@ -69,6 +71,7 @@ main{
     float: left;
     width: 30%;
     height: 500px;
+    margin: 10px;
 }
 
 #Resources{
